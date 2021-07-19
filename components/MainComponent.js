@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Directory from './DirectoryComponent';
 import CampsiteInfo from './CampsiteInfoComponent'
 import { CAMPSITES } from '../shared/campsites';
+import { View } from 'react-native-elements';
 
 class Main extends Component {
     constructor(props) {
