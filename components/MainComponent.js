@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import Directory from './DirectoryComponent';
-import CampsiteInfo from './CampsiteInfoComponent'
 import { CAMPSITES } from '../shared/campsites';
-import { View } from 'react-native-elements';
+import CampsiteInfo from './CampsiteInfoComponent';
+import { View } from 'react-native';
 
 class Main extends Component {
     constructor(props) {
@@ -12,19 +12,21 @@ class Main extends Component {
             selectedCampsite: null
         };
     }
-    onCampsiteSelect(campsiteId){
+
+    onCampsiteSelect(campsiteId) {
         this.setState({selectedCampsite: campsiteId});
     }
 
     render() {
         return (
-            <View>
-                <Directory 
-                    campsites={this.state.campsites} 
-                    onPress={campsiteId => this.onCampsiteSelect(campsiteId)} 
+            <View style={{flex: 1}}>
+                <Directory
+                    campsites={this.state.campsites}
+                    onPress={campsiteId => this.onCampsiteSelect(campsiteId)}
                 />
-                <CampsiteInfo 
-                    campsite={this.state.campsites.filter(campsite => campsite.id === this.state.selectedCampsite)[0]}
+                <CampsiteInfo
+                    campsite={this.state.campsites.filter(
+                        campsite => campsite.id === this.state.selectedCampsite)[0]}
                 />
             </View>
         );
