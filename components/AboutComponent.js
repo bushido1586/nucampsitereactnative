@@ -17,6 +17,7 @@ class About extends Component{
     static navigationOptions = {
         title: 'About Us'
     }
+
     render(){
         const renderPartner = ({item}) => {
             return (
@@ -26,6 +27,7 @@ class About extends Component{
                 leftAvatar={{ source: require('./images/bootstrap-logo.png')}}/>
             );
         };
+        
         return(
             <ScrollView>
                 <Mission />
