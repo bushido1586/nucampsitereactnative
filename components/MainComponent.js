@@ -9,7 +9,7 @@ import { View, Platform, StyleSheet, Text, ScrollView } from 'react-native';
 import { createStackNavigator } from 'react-navigation-stack';
 import { createDrawerNavigator, DrawerItems } from 'react-navigation-drawer';
 import { createAppContainer } from 'react-navigation';
-import {Icon} from 'react-native-elements';
+import {Icon, Image} from 'react-native-elements';
 import SafeAreaView from 'react-native-safe-area-view';
 
 const DirectoryNavigator = createStackNavigator(
