@@ -58,8 +58,7 @@ function RenderCampsite(props) {
                 );
 
             }else if (recognizeComment(gestureState)){
-                console.log("This is a test")
-                props.onShowModal();
+                    props.onShowModal();
             }
             return true;
         }
