@@ -358,7 +358,7 @@ class Main extends Component {
                 connectionMsg = 'The network connection state is unknown.';
                 break;
             case 'cellular':
-                connectionMsg = 'You are noe connected to a cellular network';
+                connectionMsg = 'You are now connected to a cellular network';
                 break;
             case 'wifi':
                 connectionMsg = 'You are now connected to a WiFi network';
